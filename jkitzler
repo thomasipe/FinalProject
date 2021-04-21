@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 60px 100px;
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Stroke Predictor</h1>
+
+<div class="grid-container">
+  <div>Gender?  <td id="sex_r" class="CalcfemaleBg1" style="padding:10px" valign="middle" onclick="check()"><input type="radio" value="m" name="sex" onclick="check()" style="color: rgb(204, 204, 204);">Male <input type="radio" value="f" name="sex" onclick="check()" style="color: rgb(204, 204, 204);">Female </td></div>
+  	
+  <div><table id="men" border="0" cellpadding="0" align="center" cellspacing="0" width="100%" class="blueborder7 blueline7" style="line-height: 25px">
+                
+			    <tbody><tr>
+				    <td width="55%" id="age_l" class="CalcDarkBgWhite1 tv12blue" style="padding:10px" valign="baseline">Age (yrs) <span class="red">*</span></td>
+					<td id="age_r" class="CalcLiteBgBlack" style="padding:10px" valign="middle">
+					    <select name="age_m">
+					        <option value="-1">Select</option>
+					        <option value="0">56 or Below</option>
+					        <option value="1">57-59</option>
+					        <option value="2">60-62</option>
+                            <option value="3">63-65</option>
+                            <option value="4">66-68</option> 
+                            <option value="5">69-72</option>                            
+                            <option value="6">73-75</option>
+                            <option value="7">76-78</option>
+                            <option value="8">79-81</option>
+                            <option value="9">82-84</option>
+                            <option value="10">85 and Above</option>
+					</div>
+  <div>3</div>  
+  <div>Age?</div>
+  <div>5</div>
+  <div>6</div>
+  <div>Are you diabetic?</div>
+  <div>8</div> 
+  <div>9</div> 
+  <div>Are you a smoker?</div> 
+  <div>11</div> 
+  <div>12</div> 
+  <div>Do you have high Blood Pressure?</div> 
+  <div>14</div> 
+  <div>15</div> 
+  
+</div>
+
+<p>Use the <em>grid-template-rows</em> property to specify the size (height) of each row.</p>
+
+</body>
+</html>
