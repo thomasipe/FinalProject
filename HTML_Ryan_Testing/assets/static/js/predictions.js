@@ -107,7 +107,17 @@ function update_prediction(data){
         return test_result
     })
     .then(function (result) {
-        d3.selectAll("p").text("This worked maybe? " + result + " Please?")
+        var risk_level = '';
+        if (result > 0.4) {
+            risk_level = 'HIGH';
+        }
+        else if (result > 0.1) {
+            risk_level = 'MODERATE';
+        }
+        else {
+            risk_level = "LOW"
+        }
+        d3.selectAll("p").text("You are at a " + risk_level + " level of stroke?")
     })
     };
 
