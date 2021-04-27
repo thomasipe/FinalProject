@@ -1,33 +1,24 @@
 {% extends "layout.html" %}
 {% block content %}
 <article class="media content-section">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
        <div class="media-body">
          <div class="article-metadata">
-           <p>Stroke is the fifth leading cause of death in the United States (CDC.gov 2018).  While there are several different types of stroke, all involve preventing adequate blood flow (oxygen) in the brain.  Inadequate blood flow (oxygen) to the brain can lead to debilitating and fatal medical conditions.  Stroke requires immediate medical attention and quick treatment can help reduce the severity of the stroke and even possibly prevent death.    Early treatment with medications like tPA (clot buster) canminimize brain damage while preventing additional strokes.For our data science project, our team decided to create a stroke predictor webpage.  By using several different platforms like python and JavaScript we will build a HTML site to help determine someone’s risk of having a Stroke, from low risk to high risk.  We obtained stroke data from www.kaggle.com to determine risk factors.</p>
-           
+          <div class="row">
+            <div class="col-lg-7">
+              <p style="font-size: large;">Stroke is the fifth leading cause of death in the United States (CDC.gov 2018).  While there are several different types of stroke, all involve preventing adequate blood flow (oxygen) in the brain.  Inadequate blood flow (oxygen) to the brain can lead to debilitating and fatal medical conditions.  Stroke requires immediate medical attention and quick treatment can help reduce the severity of the stroke and even possibly prevent death.    Early treatment with medications like tPA (clot buster) canminimize brain damage while preventing additional strokes.For our data science project, our team decided to create a stroke predictor webpage.  By using several different platforms like python and JavaScript we will build a HTML site to help determine someone's risk of having a Stroke, from low risk to high risk.  We obtained stroke data from www.kaggle.com to determine risk factors.</p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p style="font-size: large;">Team Members: Julie Kitzler, Ryan Hathaway, Tom Sipe</p>
+            </div>
+            <div class="col-lg-5">
+<!--              <img src="static/stronk.jpeg" class="img-fluid" alt="Stroke">  -->
+						<img src="{{url_for('static', filename='stronk.jpeg')}}" class="img-fluid" alt="Stroke">
+            </div>
          </div>
        </div>
      </article>
 
-
-
-
-
-
-
-
-<!--
-	{% for post in posts %}
-     <article class="media content-section">
-       <div class="media-body">
-         <div class="article-metadata">
-           <a class="mr-2" href="#">{{ post.author }}</a>
-           <small class="text-muted">{{ post.date_posted }}</small>
-         </div>
-         <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
-         <p class="article-content">{{ post.content }}</p>
-       </div>
-     </article>
-	{% endfor %}
--->
 {% endblock content %}

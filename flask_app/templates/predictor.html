@@ -7,7 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
     <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/predictions.js') }}"></script> -->
-
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     <h1>Stroke Predictor</h1>
     <hr>
 
@@ -87,7 +87,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div>
-                    <label for="agl">Average Glucose Level</label>
+                    <label for="agl">Average Glucose Level (80 - 140 = Normal)</label>
                     <input type="text" id="agl" name="agl" placeholder="0.00">                
                 </div>
             </div>
@@ -95,7 +95,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div>
-                    <label for="bmi">BMI</label>
+                    <label for="bmi">BMI (LT 18 = Underweight, 18-25 = Normal, 25-30 = Overweight) </label>
                     <input type="text" id="bmi" name="bmi" placeholder="0.00">                
                 </div>
             </div>
@@ -116,7 +116,7 @@
     </form>
     </div>
 
-    <p>Hi</p>
+   <h3></h3>
     <script type="text/javascript" src="{{ url_for('static', filename='js/predictions.js') }}"></script>
 
 {% endblock content %}

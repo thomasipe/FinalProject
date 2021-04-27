@@ -1,25 +1,27 @@
-.h1 {
-    color: white;
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
-
-
-
-.body{
-  background-color: rbg(50,13,6);
+button {
+  width: 100%;
+  background-color: #b1b1b1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: xx-large;
 }
-
-.grid-container {
-display: grid;
-grid-template-columns: auto auto auto;
-grid-template-rows: 60px 100px;
-grid-gap: 5px;
-background-color: #2196F3;
-padding: 10px;
+button:hover {
+  background-color: #b3b3b3;
 }
-
-.grid-container > div {
-background-color: rgba(255, 255, 255, 0.8);
-text-align: center;
-padding: 20px 0;
-font-size: 30px;
+form {
+  border-radius: 5px;
+  padding: 20px;
 }
